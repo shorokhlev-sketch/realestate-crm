@@ -2,6 +2,8 @@
 
 Sales CRM for a new-build residential tower: agent links, ad attribution, leads, and unit statuses synced to the sales site.
 
+History: this is a public snapshot of a private repository (15 commits, 6 to 27 Sep 2026). Client details are replaced.
+
 Built for the sales team of a 26-floor, 279-apartment residential tower in Georgia. It shows which agent and which ad channel brought each lead, and what each lead, showing and deal cost.
 
 ![Dashboard with demo data: 30-day funnel, spend, CPL, ROAS, leads by day](docs/screenshots/dashboard.webp)
