@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Лид · Sales CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/crm.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230035AA'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23fff'%3E26%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="rail__logo">
+      <svg viewBox="0 0 140 25" fill="none" aria-hidden="true"><rect x=".5" y=".5" width="24" height="24" rx="2" fill="currentColor"/><text x="12.5" y="17.5" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#FFFFFF">RE</text><text x="32" y="17" font-family="Georgia, serif" font-size="15" letter-spacing="2.5" fill="currentColor">ESTATE</text></svg>
+      <small>CRM</small>
+    </div>
+    <nav class="rail__nav" aria-label="Разделы">
+      <a href="index.html"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19V10M10 19V5M16 19v-7M22 19H2"/></svg>Дашборд<span class="count" data-count="index.html"></span></a>
+      <a href="leads.html"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Лиды<span class="count" data-count="leads.html"></span></a>
+      <a href="board.html"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16"/><rect x="10" y="4" width="5" height="10"/><rect x="17" y="4" width="4" height="13"/></svg>Канбан<span class="count" data-count="board.html"></span></a>
+      <a href="agents.html"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>Агенты<span class="count" data-count="agents.html"></span></a>
+      <a href="channels.html"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Каналы<span class="count" data-count="channels.html"></span></a>
+      <a href="expenses.html"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12"/><circle cx="12" cy="12" r="2.5"/></svg>Расходы<span class="count" data-count="expenses.html"></span></a>
+      <a href="units.html"><svg class="icon" viewBox="0 0 24 24"><path d="M4 21V5l8-3 8 3v16M9 9h2M13 9h2M9 13h2M13 13h2M9 17h2M13 17h2"/></svg>Квартиры<span class="count" data-count="units.html"></span></a>
+      <div class="sep"></div>
+      <a href="settings.html"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Настройки<span class="count" data-count="settings.html"></span></a>
+    </nav>
+    <div class="rail__foot"></div>
+  </aside>
+  <main class="scene" id="scene">
+    <div class="topbar">
+      <div class="topbar__title" id="title"><h1>Лид</h1><p class="sub" id="sub"></p></div>
+      <div class="topbar__tools" id="tools"></div>
+    </div>
+    <div class="stack" id="content"><div class="empty">Загрузка...</div></div>
+  </main>
+</div>
+<script src="../js/crm.js"></script>
+<script src="../js/pages/lead.js"></script>
+</body>
+</html>

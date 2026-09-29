@@ -1,0 +1,21 @@
+[Unit]
+Description=realestate-crm - sales CRM for a new-build residential project
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/realestate-crm
+EnvironmentFile=/opt/realestate-crm/.env
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /opt/realestate-crm/server/index.js
+Restart=always
+RestartSec=5
+User=root
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/realestate-crm
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

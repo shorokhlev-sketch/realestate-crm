@@ -1,0 +1,30 @@
+{
+  "_comment": "Таксономия каналов и правила utm -> канал. Правила проверяются по priority (меньше - раньше), первое совпадение побеждает. Без совпадений: есть referrer -> organic, нет -> direct. Редактируется в Настройках CRM, при старте сидируется в БД, если таблица пуста.",
+  "channels": [
+    { "id": "meta",     "name": "Meta",       "sort": 10, "is_paid": 1 },
+    { "id": "google",   "name": "Google",     "sort": 20, "is_paid": 1 },
+    { "id": "telegram", "name": "Telegram",   "sort": 30, "is_paid": 1 },
+    { "id": "yandex",   "name": "Яндекс",     "sort": 40, "is_paid": 1 },
+    { "id": "tiktok",   "name": "TikTok",     "sort": 50, "is_paid": 1 },
+    { "id": "agent",    "name": "Агенты",     "sort": 60, "is_paid": 0 },
+    { "id": "organic",  "name": "Органика",   "sort": 70, "is_paid": 0 },
+    { "id": "direct",   "name": "Прямой",     "sort": 80, "is_paid": 0 }
+  ],
+  "rules": [
+    { "priority": 10, "field": "click_id",      "op": "eq",     "pattern": "fbclid",                          "channel": "meta" },
+    { "priority": 11, "field": "click_id",      "op": "eq",     "pattern": "gclid",                           "channel": "google" },
+    { "priority": 12, "field": "click_id",      "op": "eq",     "pattern": "ttclid",                          "channel": "tiktok" },
+    { "priority": 13, "field": "click_id",      "op": "eq",     "pattern": "yclid",                           "channel": "yandex" },
+    { "priority": 20, "field": "utm_source",    "op": "in",     "pattern": "meta,fb,facebook,instagram,ig",   "channel": "meta" },
+    { "priority": 21, "field": "utm_source",    "op": "in",     "pattern": "google,adwords,gads",             "channel": "google" },
+    { "priority": 22, "field": "utm_source",    "op": "in",     "pattern": "telegram,tg,tgads",               "channel": "telegram" },
+    { "priority": 23, "field": "utm_source",    "op": "in",     "pattern": "yandex,ya,direct",                "channel": "yandex" },
+    { "priority": 24, "field": "utm_source",    "op": "in",     "pattern": "tiktok,tt",                       "channel": "tiktok" },
+    { "priority": 30, "field": "has_agent",     "op": "exists", "pattern": "",                                "channel": "agent" },
+    { "priority": 40, "field": "referrer_host", "op": "regex",  "pattern": "(^|\\.)(facebook|instagram|fb)\\.com$|^l\\.instagram\\.com$|^lm\\.facebook\\.com$", "channel": "meta" },
+    { "priority": 41, "field": "referrer_host", "op": "regex",  "pattern": "(^|\\.)(t\\.me|telegram\\.org|telegram\\.me)$", "channel": "telegram" },
+    { "priority": 42, "field": "referrer_host", "op": "regex",  "pattern": "(^|\\.)tiktok\\.com$",           "channel": "tiktok" },
+    { "priority": 50, "field": "referrer_host", "op": "regex",  "pattern": "(^|\\.)(google\\.[a-z.]+|bing\\.com|duckduckgo\\.com)$", "channel": "organic" },
+    { "priority": 51, "field": "referrer_host", "op": "regex",  "pattern": "(^|\\.)(yandex\\.[a-z]+|ya\\.ru)$", "channel": "organic" }
+  ]
+}

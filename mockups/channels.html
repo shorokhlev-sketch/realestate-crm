@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каналы · Sales CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../public/css/tokens.css">
+<link rel="stylesheet" href="../public/css/crm.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230035AA'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23fff'%3E26%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="rail__logo">
+      <svg viewBox="0 0 140 25" fill="none" aria-hidden="true"><rect x=".5" y=".5" width="24" height="24" rx="2" fill="currentColor"/><text x="12.5" y="17.5" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#FFFFFF">RE</text><text x="32" y="17" font-family="Georgia, serif" font-size="15" letter-spacing="2.5" fill="currentColor">ESTATE</text></svg>
+      <small>CRM</small>
+    </div>
+    <nav class="rail__nav" aria-label="Разделы">
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19V10M10 19V5M16 19v-7M22 19H2"/></svg>Дашборд</a>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Лиды<span class="count">60</span></a>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16"/><rect x="10" y="4" width="5" height="10"/><rect x="17" y="4" width="4" height="13"/></svg>Канбан</a>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>Агенты<span class="count">5</span></a>
+      <a href="#" class="is-active"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Каналы</a>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12"/><circle cx="12" cy="12" r="2.5"/></svg>Расходы</a>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><path d="M4 21V5l8-3 8 3v16M9 9h2M13 9h2M9 13h2M13 13h2M9 17h2M13 17h2"/></svg>Квартиры<span class="count">279</span></a>
+      <div class="sep"></div>
+      <a href="#"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Настройки</a>
+    </nav>
+    <div class="rail__foot"><b>ООО «Девелопер»</b><span>admin · выйти</span><span>демо-данные включены</span></div>
+  </aside>
+
+  <main class="scene">
+    <div class="topbar">
+      <div class="topbar__title">
+        <h1>Каналы</h1>
+        <p class="sub">7 авг - 6 сент 2026 · атрибуция по первому касанию</p>
+      </div>
+      <div class="topbar__tools">
+        <div class="seg" role="group" aria-label="Период"><button>7 дн</button><button class="is-active">30 дн</button><button>90 дн</button><button>Период...</button></div>
+        <div class="seg" role="group" aria-label="Атрибуция"><button class="is-active">Первое касание</button><button>Последнее</button></div>
+        <button class="btn btn--primary"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Добавить расход</button>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div class="kpis">
+        <div class="kpi"><div class="kpi__label">Клики</div><div class="kpi__value">1 840</div><div class="kpi__delta is-up">+18 % к пред. 30 дн</div></div>
+        <div class="kpi"><div class="kpi__label">Лиды</div><div class="kpi__value">60</div><div class="kpi__delta is-up">+9 · CR 3,3 %</div></div>
+        <div class="kpi"><div class="kpi__label">Показы</div><div class="kpi__value">23</div><div class="kpi__delta">38 % от лидов</div></div>
+        <div class="kpi"><div class="kpi__label">Брони</div><div class="kpi__value">8</div><div class="kpi__delta is-up">+3</div></div>
+        <div class="kpi"><div class="kpi__label">Сделки</div><div class="kpi__value">3</div><div class="kpi__delta">$183 600</div></div>
+        <div class="kpi"><div class="kpi__label">Расход</div><div class="kpi__value">$2 140</div><div class="kpi__delta">4 канала</div></div>
+        <div class="kpi"><div class="kpi__label">CPL</div><div class="kpi__value">$43</div><div class="kpi__delta is-up">-$6</div></div>
+        <div class="kpi kpi--accent"><div class="kpi__label">ROAS</div><div class="kpi__value">86×</div><div class="kpi__delta">выручка / расход</div></div>
+      </div>
+
+      <div class="grid grid--2-3">
+        <section class="panel">
+          <div class="panel__head"><h2>Воронка</h2><span class="hint">все каналы</span></div>
+          <div class="panel__body">
+            <div class="funnel">
+              <div class="funnel__label">Клики</div><div class="funnel__bar"><i style="width:100%"></i><b>1 840</b></div><div class="funnel__conv"></div>
+              <div class="funnel__label">Лиды</div><div class="funnel__bar"><i style="width:22%"></i><b>60</b></div><div class="funnel__conv"><b>3,3 %</b></div>
+              <div class="funnel__label">Показы</div><div class="funnel__bar"><i style="width:12%"></i><b>23</b></div><div class="funnel__conv"><b>38 %</b></div>
+              <div class="funnel__label">Брони</div><div class="funnel__bar"><i style="width:6%"></i><b class="is-out" style="left:6.5%">8</b></div><div class="funnel__conv"><b>35 %</b></div>
+              <div class="funnel__label">Сделки</div><div class="funnel__bar"><i style="width:3%"></i><b class="is-out" style="left:3.5%">3</b></div><div class="funnel__conv"><b>38 %</b></div>
+            </div>
+            <p class="muted" style="font:var(--text-caption);margin-top:14px">Клики - в своём масштабе (1 840 = 100 %), шаги от лидов и ниже - в масштабе лидов (60 = 22 %). Справа - конверсия из предыдущего шага.</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__head"><h2>Лиды по дням</h2><span class="hint">столбики - лиды, линия - клики ÷ 10</span></div>
+          <div class="panel__body">
+            <div class="chart">
+              <svg viewBox="0 0 640 160" preserveAspectRatio="none" aria-label="Лиды и клики по дням, 30 дней">
+                <g class="grid"><line x1="40" x2="640" y1="20" y2="20"/><line x1="40" x2="640" y1="60" y2="60"/><line x1="40" x2="640" y1="100" y2="100"/><line x1="40" x2="640" y1="140" y2="140"/></g>
+                <g class="axis"><text x="0" y="24">6</text><text x="0" y="64">4</text><text x="0" y="104">2</text><text x="0" y="144">0</text></g>
+                <g class="bars">
+                  <rect class="bar" x="46" y="100" width="12" height="40"/><rect class="bar" x="66" y="120" width="12" height="20"/><rect class="bar" x="86" y="80" width="12" height="60"/><rect class="bar" x="106" y="120" width="12" height="20"/><rect class="bar" x="126" y="100" width="12" height="40"/><rect class="bar" x="146" y="140" width="12" height="0"/><rect class="bar" x="166" y="120" width="12" height="20"/>
+                  <rect class="bar" x="186" y="60" width="12" height="80"/><rect class="bar" x="206" y="100" width="12" height="40"/><rect class="bar" x="226" y="80" width="12" height="60"/><rect class="bar" x="246" y="120" width="12" height="20"/><rect class="bar" x="266" y="100" width="12" height="40"/><rect class="bar" x="286" y="120" width="12" height="20"/><rect class="bar" x="306" y="140" width="12" height="0"/>
+                  <rect class="bar" x="326" y="80" width="12" height="60"/><rect class="bar" x="346" y="100" width="12" height="40"/><rect class="bar" x="366" y="40" width="12" height="100"/><rect class="bar" x="386" y="100" width="12" height="40"/><rect class="bar" x="406" y="80" width="12" height="60"/><rect class="bar" x="426" y="120" width="12" height="20"/><rect class="bar" x="446" y="100" width="12" height="40"/>
+                  <rect class="bar" x="466" y="60" width="12" height="80"/><rect class="bar" x="486" y="100" width="12" height="40"/><rect class="bar" x="506" y="80" width="12" height="60"/><rect class="bar" x="526" y="120" width="12" height="20"/><rect class="bar" x="546" y="100" width="12" height="40"/><rect class="bar" x="566" y="60" width="12" height="80"/><rect class="bar" x="586" y="80" width="12" height="60"/><rect class="bar" x="606" y="100" width="12" height="40"/><rect class="bar is-dim" x="626" y="120" width="12" height="20"/>
+                </g>
+                <polyline class="line" points="52,92 72,104 92,84 112,110 132,96 152,118 172,108 192,70 212,88 232,80 252,104 272,92 292,106 312,120 332,86 352,90 372,52 392,84 412,76 432,104 452,92 472,66 492,88 512,78 532,102 552,90 572,64 592,72 612,86 632,108"/>
+                <circle class="dot" cx="372" cy="52" r="3.5"/>
+              </svg>
+              <div class="tooltip" style="left:57%;top:8px">28 авг · 5 лидов · 88 кликов</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font:var(--text-caption-meta);color:var(--fg-3);margin-top:6px"><span>7 авг</span><span>21 авг</span><span>6 сент</span></div>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <div class="panel__head">
+          <h2>По каналам</h2><span class="hint">расход распределён по дням периода</span>
+          <div class="tools"><div class="seg seg--sm"><button class="is-active">Каналы</button><button>Кампании</button></div><button class="btn btn--text">Экспорт CSV</button></div>
+        </div>
+        <div class="panel__body panel__body--flush tbl-wrap">
+          <table class="tbl">
+            <thead><tr>
+              <th>Канал</th><th class="right">Клики</th><th class="right">Лиды</th><th class="right dim">CR</th><th class="right">Показы</th><th class="right">Брони</th><th class="right">Сделки</th><th class="right">Расход</th><th class="right">CPL</th><th class="right">Показ</th><th class="right">CAC</th><th class="right">ROAS</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td class="strong"><a class="lnk" href="#">Meta</a></td><td class="right">910</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:100%"></i></span><span class="num strong">31</span></div></td>
+                <td class="right pct is-good">3,4 %</td><td class="right">12</td><td class="right">5</td><td class="right">2</td><td class="right">$1 300</td><td class="right">$42</td><td class="right">$108</td><td class="right">$650</td><td class="right strong">94×</td>
+              </tr>
+              <tr class="is-sub"><td>sep_sea · video_1</td><td class="right">520</td><td class="right">19</td><td class="right pct">3,7 %</td><td class="right">8</td><td class="right">3</td><td class="right">1</td><td class="right">$800</td><td class="right">$42</td><td class="right">$100</td><td class="right">$800</td><td class="right">77×</td></tr>
+              <tr class="is-sub"><td>aug_studio</td><td class="right">310</td><td class="right">9</td><td class="right pct">2,9 %</td><td class="right">3</td><td class="right">2</td><td class="right">1</td><td class="right">$500</td><td class="right">$56</td><td class="right">$167</td><td class="right">$500</td><td class="right">122×</td></tr>
+              <tr class="is-sub"><td class="dim">(без кампании)</td><td class="right">80</td><td class="right">3</td><td class="right pct">3,8 %</td><td class="right">1</td><td class="right">0</td><td class="right">0</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td></tr>
+              <tr>
+                <td class="strong"><a class="lnk" href="#">Google</a></td><td class="right">420</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:35%"></i></span><span class="num strong">11</span></div></td>
+                <td class="right pct">2,6 %</td><td class="right">4</td><td class="right">1</td><td class="right">0</td><td class="right">$480</td><td class="right">$44</td><td class="right">$120</td><td class="right dim">-</td><td class="right pct is-bad">0×</td>
+              </tr>
+              <tr>
+                <td class="strong"><a class="lnk" href="#">Telegram</a></td><td class="right">230</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:23%"></i></span><span class="num strong">7</span></div></td>
+                <td class="right pct is-good">3,0 %</td><td class="right">3</td><td class="right">1</td><td class="right">1</td><td class="right">$220</td><td class="right">$31</td><td class="right">$73</td><td class="right">$220</td><td class="right strong">278×</td>
+              </tr>
+              <tr>
+                <td class="strong"><a class="lnk" href="#">Яндекс</a></td><td class="right">60</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:3%"></i></span><span class="num strong">1</span></div></td>
+                <td class="right pct">1,7 %</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">$140</td><td class="right pct is-bad">$140</td><td class="right dim">-</td><td class="right dim">-</td><td class="right pct is-bad">0×</td>
+              </tr>
+              <tr class="grp"><td colspan="12">Бесплатные</td></tr>
+              <tr>
+                <td class="strong"><a class="lnk" href="#">Агенты</a></td><td class="right">150</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:19%"></i></span><span class="num strong">6</span></div></td>
+                <td class="right pct is-good">4,0 %</td><td class="right">3</td><td class="right">1</td><td class="right">0</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td>
+              </tr>
+              <tr>
+                <td class="strong">Органика</td><td class="right">50</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:10%"></i></span><span class="num strong">3</span></div></td>
+                <td class="right pct">6,0 %</td><td class="right">1</td><td class="right">0</td><td class="right">0</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td>
+              </tr>
+              <tr>
+                <td class="strong">Прямой</td><td class="right">20</td>
+                <td class="right"><div class="cell-meter" style="justify-content:flex-end"><span class="meter"><i style="width:3%"></i></span><span class="num strong">1</span></div></td>
+                <td class="right pct">5,0 %</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td><td class="right dim">-</td>
+              </tr>
+              <tr class="is-total"><td>Итого</td><td class="right">1 840</td><td class="right">60</td><td class="right pct">3,3 %</td><td class="right">23</td><td class="right">8</td><td class="right">3</td><td class="right">$2 140</td><td class="right">$43</td><td class="right">$93</td><td class="right">$713</td><td class="right">86×</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="grid grid--3-2">
+        <section class="panel">
+          <div class="panel__head"><h2>Расходы за период</h2><div class="tools"><button class="btn btn--outlined btn--sm">Все расходы</button></div></div>
+          <div class="panel__body panel__body--flush tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>Канал</th><th>Кампания</th><th>Период</th><th class="right">Сумма</th><th class="right">В USD</th><th></th></tr></thead>
+              <tbody>
+                <tr><td class="strong">Meta</td><td>sep_sea</td><td>1 - 30 сент</td><td class="right">$800</td><td class="right">$800</td><td class="right"><button class="btn btn--text">изменить</button></td></tr>
+                <tr><td class="strong">Meta</td><td>aug_studio</td><td>7 - 31 авг</td><td class="right">1 350 ₾</td><td class="right">$500</td><td class="right"><button class="btn btn--text">изменить</button></td></tr>
+                <tr><td class="strong">Google</td><td class="dim">-</td><td>7 авг - 6 сент</td><td class="right">$480</td><td class="right">$480</td><td class="right"><button class="btn btn--text">изменить</button></td></tr>
+                <tr><td class="strong">Telegram</td><td>tg_batumi_ru</td><td>15 авг - 6 сент</td><td class="right">€204</td><td class="right">$220</td><td class="right"><button class="btn btn--text">изменить</button></td></tr>
+                <tr><td class="strong">Яндекс</td><td class="dim">-</td><td>7 авг - 6 сент</td><td class="right">$140</td><td class="right">$140</td><td class="right"><button class="btn btn--text">изменить</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__head"><h2>Новый расход</h2></div>
+          <div class="panel__body stack">
+            <div class="form-row">
+              <label class="field field--select"><span class="field__label">Канал</span><select><option>Meta</option><option>Google</option><option>Telegram</option><option>Яндекс</option><option>TikTok</option></select><svg class="caret" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg></label>
+              <label class="field"><span class="field__label">Кампания (utm_campaign)</span><input class="field__input" placeholder="необязательно"></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span class="field__label">С</span><input class="field__input" type="date" value="2026-09-01"></label>
+              <label class="field"><span class="field__label">По</span><input class="field__input" type="date" value="2026-09-30"></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span class="field__label">Сумма</span><input class="field__input" inputmode="decimal" placeholder="0"></label>
+              <label class="field field--select"><span class="field__label">Валюта</span><select><option>USD</option><option>GEL</option><option>EUR</option></select><svg class="caret" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4"/></svg></label>
+            </div>
+            <div class="note-box">Курс подставится из настроек (1 ₾ = $0,37, 1 € = $1,08). Расход распределяется по дням периода: отчёт за неделю возьмёт 7/30 суммы.</div>
+            <div style="display:flex;gap:10px"><button class="btn btn--primary">Сохранить</button><button class="btn btn--outlined">Отмена</button></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
